@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/bootstrap.css">
     <title>IMC</title>
 </head>
 <body>
     <h1>Calcular índice de massa corporal utilizando o método POST</h1>
-    <form class="from-control" action-"calcular_imc_post" method=""post>
+    <form class="from-control" action="calcular_imc_post" method="post">
         <label class="form-label">Sua Altura</label>
-        <imput class="form-control" type = "text" name="txt_altura"><br>
+        <input class="form-control" type = "text" name="txt_altura"><br>
         <label class="form-label">Seu peso</label>
-        <imput class="form-control" type = "text" class="form-control-plaintext" name="txt_peso"><br>
-        <label class="btn btn-primary" type="submit" value = "calcular">
-        <label class="btn btn-primary" type="reset" value = "limpar">
+        <input class="form-control" type = "text" class="form-control-plaintext" name="txt_peso"><br>
+        <input class="btn btn-primary" type="submit" value = "calcular">
+        <input class="btn btn-primary" type="reset" value = "limpar">
     </form>
 </body>
 </html>
