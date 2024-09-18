@@ -10,12 +10,12 @@ app = Flask(__name__)
 def index():
     return render_template ('imc.html')
 
-@app.route('/calcular_imc_post', methods=['POST']) # Rota para o método POST do formulário corresponde a action="/calcular_imc_post"
+@app.route('/calcular_imc_post', methods=['POST']) # Rota para o método POST do formulário corresponde a action="calcular_imc_post"
 def calcular_imc():
     altura = float(request.form['txt_altura'])
     peso = float(request.form['txt_peso'])
     imc = peso/(altura*altura)
     # Usar uma f-string, você pode incluir expressões Python dentro de chaves {} dentro da string. Essas expressões serão avaliadas e seus resultados serão incorporados na string final.
-    return f'Seu IMC é: {imc:.2f}'
+    return render_template('imc.html', result_imc =  imc)
 
 app.run(debug=True)
