@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Matemática</title>
+    <link rel="stylesheet" href="/static/bootstrap.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">Aprendendo Matemática</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Aprendendo Matemática</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/calc-triangulo">Calcular Tipo de Triângulo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/media-notas">Calcular Média de Notas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="mb-4">Calcular Tipo de Triângulo</h1>
+                <form method="get" action="/tipo-triangulo" >
+                    <div class="form-group" >
+                        <label for="lado1">Lado 1:</label>
+                        <input type="number" step="any" class="form-control" id="lado1" name="lado1">
+                    </div>
+                    <div class="form-group">
+                        <label for="lado2">Lado 2:</label>
+                        <input type="number" step="any" class="form-control" id="lado2" name="lado2">
+                    </div>
+                    <div class="form-group">
+                        <label for="lado3">Lado 3:</label>
+                        <input type="number" step="any" class="form-control" id="lado3" name="lado3">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Calcular</button>
+                </form>
+                
+                    <div class="mt-4">
+                        <p class="lead">Tipo de Triângulo: Equilátero</p>
+                        
+                           <img src="/static/triangulo-equilatero.png">
+                         
+                         
+                         
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

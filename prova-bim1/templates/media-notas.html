@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Matemática</title>
+    <link rel="stylesheet" href="/static/bootstrap.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">Aprendendo Matemática</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Aprendendo Matemática</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/calc-triangulo">Calcular Tipo de Triângulo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/media-notas">Calcular Média de Notas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="mb-4">Calcular Média de Notas</h1>
+                <form method="post">
+                    <div class="form-group">
+                        <label for="nota1">Nota 1:</label>
+                        <input type="number" step="any" class="form-control" id="nota1" name="nota1">
+                    </div>
+                    <div class="form-group">
+                        <label for="nota2">Nota 2:</label>
+                        <input type="number" step="any" class="form-control" id="nota2" name="nota2">
+                    </div>
+                    <div class="form-group">
+                        <label for="nota3">Nota 3:</label>
+                        <input type="number" step="any" class="form-control" id="nota3" name="nota3">
+                    </div>
+                    <div class="form-group">
+                        <label for="nota4">Nota 4:</label>
+                        <input type="number" step="any" class="form-control" id="nota4" name="nota4">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Calcular</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
